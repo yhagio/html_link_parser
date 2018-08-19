@@ -84,7 +84,13 @@ func GetLinkText(node *html.Node) string {
 }
 
 func main() {
-	url := "https://golang.org/"
+	fmt.Println("\n=====👽HTML Link Parser👽=====\n")
+	fmt.Println("Type URL (i.e. https://golang.org):")
+
+	// Get user's input url
+	var url string
+	fmt.Scanf("%s\n", &url)
+
 	fmt.Printf("\nReading %s ...\n", url)
 
 	resp, err := http.Get(url)

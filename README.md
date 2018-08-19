@@ -1,7 +1,7 @@
 # HTML link parser
 
 Get all links (`<a>` tags) and print out the href link and its text
-from a provided url (in this example, I use `https://golang.org/`)
+from a provided url.
 
 ### How to run
 
@@ -9,12 +9,20 @@ from a provided url (in this example, I use `https://golang.org/`)
 go run main.go
 ```
 
+Then it asks you to type URL to parse.
+(in this example, I use `https://golang.org/`)
+
 Output
 
 ```
 $ go run main.go
 
-Reading https://golang.org/ ...
+=====👽HTML Link Parser👽=====
+
+Type URL (i.e. https://golang.org):
+http://golang.org
+
+Reading http://golang.org ...
 Parsing ...
 
 <<< RESULT (Total: 18) >>>
